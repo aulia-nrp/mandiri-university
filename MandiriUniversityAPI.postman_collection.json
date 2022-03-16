@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "3492fcd9-085e-4757-bed7-0f4a2acb89c8",
+		"name": "MandiriUniversityAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE STUDENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Maria\",\r\n    \"email\":\"hwasassi@gmail.com\",\r\n    \"address\":\"Seoul\",\r\n    \"birthDate\":\"1995-06-06\",\r\n    \"phoneNumber\":\"618439234\",\r\n    \"entryYear\":2013\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ STUDENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE STUDENT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4028ab0e7f8c585b017f8c5bfc470000\",\r\n    \"name\": \"Aulia Nurrahma Rosanti Paidja\",\r\n    \"email\": \"aulianrosap@gmail.com\",\r\n    \"address\": \"Sidoarjo\",\r\n    \"birthDate\": \"2000-01-01\",\r\n    \"phoneNumber\": \"08123456789\",\r\n    \"entryYear\": 2018\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE STUDENT BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/student/4028ab0e7f8c6124017f8c626fa80000",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"student",
+						"4028ab0e7f8c6124017f8c626fa80000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET STUDENT BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/student/4028ab0e7f8c6124017f8c630fb90001",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"student",
+						"4028ab0e7f8c6124017f8c630fb90001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
