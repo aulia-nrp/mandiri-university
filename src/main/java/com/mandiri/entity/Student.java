@@ -9,10 +9,12 @@ import java.util.Date;
 @Entity
 @Table(name = "mst_student")
 public class Student {
+
     @Id
     @GeneratedValue(generator = "uuid-generator")
     @GenericGenerator(name = "uuid-generator", strategy = "uuid")
     private String id;
+
     @Column(length = 200, nullable = false)
     private String name;
     @Column(length = 200, nullable = false)
